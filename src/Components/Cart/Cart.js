@@ -15,8 +15,10 @@ export class Cart extends Component {
             if (cart.length > 0) {
               return (
                 <React.Fragment>
+                <div className="mt-5">
                   <Title name="Your" title="Cart" />
-                  <CartColumns />
+                </div>
+                <CartColumns />
                   <CartList value={value}/>
                   <CartTotals value={value} history={this.props.history}/>
                 </React.Fragment>
